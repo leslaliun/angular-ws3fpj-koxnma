@@ -1,5 +1,12 @@
 <h2>Products</h2>
 
+<button (click)="share()">
+  Share
+</button>
+
+<app-product-alerts [product]="product">
+</app-product-alerts>
+
 <div *ngFor="let product of products">
 
 	<h3>
